@@ -6,7 +6,7 @@
 3. ng build
 4. cd ../server
 5. npm i
-6. node
+6. node index.js
 7. http://localhost:3000
 
 ### todo:

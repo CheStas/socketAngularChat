@@ -5,8 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm install -g angular-cli",
-    "postinstall": "cd client/ && npm i && cd client/ && ng build && cd server/ && npm i"
+    "preinstall": "npm install -g angular-cli@latest",
+    "postinstall": "cd client/ && npm i && ng build && cd ../server/ && npm i"
   },
   "repository": {
     "type": "git",
