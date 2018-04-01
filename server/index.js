@@ -106,30 +106,3 @@ io.on('connection', function(socket){
         }
     })
 });
-
-
-// "id": "echoBot",
-// "name": "Echo bot",
-// "info": "Echo all your messages",
-// "isActive": "true",
-// "img": "https://robohash.org/nammaioresillum.png?size=150x150&set=set4"
-
-
-// "id": "reverseBot",
-//     "name": "Reverse bot",
-//     "info": "Reverse and Echo all your messages",
-//     "isActive": true,
-//     "img": "https://robohash.org/etullamquam.bmp?size=150x150&set=set4"
-
-//     "id": "spamBot",
-//     "name": "Spam bot",
-//     "info": "Send random message every 10-120seconds. Ignore all messages",
-//     "isActive": true,
-//     "img": "https://robohash.org/earumetprovident.bmp?size=150x150&set=set4"
-
-
-//     "id": "ignoreBot",
-//     "name": "Ignore bot",
-//     "info": "Ignore all messages",
-//     "isActive": true,
-//     "img": "https://robohash.org/placeatliberoet.jpg?size=150x150&set=set4"
