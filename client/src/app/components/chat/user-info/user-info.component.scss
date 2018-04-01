@@ -1,0 +1,25 @@
+.userInfoWrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+img {
+    width: 180px;
+    height: 180px;
+}
+.nameWrap {
+    display: flex;
+    width: 100%;
+    padding: 20px 25px;
+    flex-flow: column nowrap;
+    background-color: #c0c9d7;
+}
+.name {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #363636;
+}
+
+.info {
+    font-size: 14px;
+    color: #3b434a;
+}

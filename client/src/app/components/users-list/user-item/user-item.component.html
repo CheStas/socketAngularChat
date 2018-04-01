@@ -1,0 +1,11 @@
+<div [ngClass]="{'imgWrap': true, 'active': user.isActive}">
+    <img src="{{user.img}}" alt="{{user.name}}">
+</div>
+<div class="nameWrap">
+    <h2 class="name">
+        {{user.name}}
+        <span *ngIf="user.currentUser">(you)</span>
+        <span class="newMsg" *ngIf="user.newMsg">{{user.newMsg}}</span>
+    </h2>
+    <p class="info">{{user.info | cutText : 40}}</p>
+</div>

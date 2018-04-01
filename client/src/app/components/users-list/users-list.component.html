@@ -1,0 +1,15 @@
+<div class="tabs">
+    <button [ngClass]="{'active': activeTab === 'online'}" (click)="changeTab('online')">Online</button>
+    <button [ngClass]="{'active': activeTab === 'all'}" (click)="changeTab('all')">All</button>
+</div>
+<div class="usersList">
+    <user-item
+        *ngFor="let user of (users | isUserOnline : activeTab | filterUserByName : filterQuery)"
+        [user]="user"
+        (click)="onSelectChat(user)"
+        >
+    </user-item>
+</div>
+<div class="search">
+    <input type="text" [(ngModel)]="filterQuery" placeholder="Search..">
+</div>

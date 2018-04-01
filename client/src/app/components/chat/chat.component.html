@@ -1,0 +1,11 @@
+<div *ngIf="selectedChat">
+    <user-info [user]="selectedChat"></user-info>
+    <div class="messages" *ngIf="!selectedChat.currentUser" #messageWrap [scrollTop]="messageWrap.scrollHeight">
+        <message *ngFor="let msg of messages" [msg]="msg" [myId]="currentId"></message>
+    </div>
+    <div class="sendWrap" *ngIf="!selectedChat.currentUser">
+        <input type="text" (keyup.enter)="sendMessageEmit()" placeholder="Start chatting!" [(ngModel)]="textMessage">
+        <button (click)="sendMessageEmit()">Send message</button>
+    </div>
+</div>
+<h3 *ngIf="!selectedChat" class="welcomMsg">Select chat to begin</h3>

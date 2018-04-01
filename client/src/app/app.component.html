@@ -1,0 +1,11 @@
+<chat
+    [selectedChat]="selectedChat"
+    [messages]="messages"
+    [currentId]="appService.currentId"
+    (sendMessage)="sendMessage($event)"
+></chat>
+<users-list
+    *ngIf="users"
+    [users]="users"
+    (selectChatEmit)="onSelectChat($event)"
+></users-list>

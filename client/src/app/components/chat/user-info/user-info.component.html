@@ -1,0 +1,7 @@
+<div class="userInfoWrap" *ngIf="user">
+  <img src="{{user.img}}" alt="{{user.name}}">
+  <div class="nameWrap">
+    <h2 class="name">{{user.name}} <span *ngIf="user.currentUser">(you)</span></h2>
+    <p class="info">{{user.info}}</p>
+  </div>
+</div>

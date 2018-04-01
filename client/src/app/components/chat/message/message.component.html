@@ -1,0 +1,10 @@
+<div *ngIf="msg" class="msg" [ngClass]="{'myMsg': msg.idFrom === myId}">
+  <div class="msg__title">
+    <span class="title__name">{{ msg.name }}</span>
+    <span class="title__time">{{ msg.time | date }}</span>
+  </div>
+  <div class="msg__body">
+    {{msg.text}}
+  </div>
+</div>
+<div *ngIf="msg.isMy" class="msg__seenTime">Seen 4.12pm</div>

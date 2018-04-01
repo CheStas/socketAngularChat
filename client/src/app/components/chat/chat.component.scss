@@ -1,0 +1,40 @@
+:host {
+    flex: 80%;
+    background-color: #d8dee6;
+}
+.messages {
+    width: 100%;
+    height: calc(100vh - 257px);
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+.sendWrap {
+    display: flex;
+    margin: 20px 10px;
+    flex-flow: row nowrap;
+
+    input {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+    }
+    button {
+        width: 20%;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0;
+        background-color: #5e8ac7;
+        font-size: 13px;
+        font-weight: 700px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.welcomMsg {
+    margin: 20px;
+    text-align: center;
+}
