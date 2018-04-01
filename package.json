@@ -1,0 +1,20 @@
+{
+  "name": "angularsocketchat",
+  "version": "1.0.0",
+  "description": "### install 1. cd client/ 2. npm i 3. ng build 4. cd ../server 5. npm i 6. node 7. http://localhost:3000",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd client/ && npm i && ng build && cd ../server/ && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheStas/socketAngularChat.git"
+  },
+  "author": "chestas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CheStas/socketAngularChat/issues"
+  },
+  "homepage": "https://github.com/CheStas/socketAngularChat#readme"
+}

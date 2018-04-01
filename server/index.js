@@ -9,8 +9,12 @@ const express = require('express'),
     commonService = require('./services/commonService'),
     usersService = require('./services/usersService');
 
-http.listen(3000, ()=>{
-  console.log('listening on :3000');
+http.listen(process.env.PORT || 3000, (err) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+    console.log("Server listening on port", process.env.PORT || 3000)
 });
 
 app.use(express.static(__dirname + '/../client/dist'));

@@ -15,4 +15,6 @@
 - seen event
 - save user to localStorage(restore data)
 - lint
+- show msg notification
+- erros from server
 

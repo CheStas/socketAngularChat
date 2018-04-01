@@ -16,6 +16,8 @@
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
+    "@angular/cli": "~1.7.3",
+    "@angular/compiler-cli": "^5.2.0",
     "@angular/forms": "^5.2.0",
     "@angular/http": "^5.2.0",
     "@angular/platform-browser": "^5.2.0",
@@ -28,8 +30,6 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "~1.7.3",
-    "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "typescript": "~2.5.3"
   }
